@@ -1,0 +1,55 @@
+# 站点基本信息
+site_name: 我的Wiki博客  # 改成你的博客名称
+site_description: 这是一个基于MkDocs和Material主题搭建的知识库  # 站点描述
+site_author: 你的名字  # 你的名字
+site_url: https://your-domain.com  # 你的站点URL，部署后更新
+
+# 主题配置
+theme:
+  name: material  # 使用material主题
+  language: zh  # 设置为中文（部分UI元素会汉化）[8](@ref)
+  palette:
+    # 配色方案（默认提供 light 和 dark 模式）
+    - scheme: default
+      toggle:
+        icon: material/weather-sunny  # 亮模式图标
+        name: 切换到深色模式
+    - scheme: slate
+      toggle:
+        icon: material/weather-night  # 暗模式图标
+        name: 切换到浅色模式
+  features:
+    - navigation.tabs  # 导航选项卡
+    - navigation.path  # 显示当前页面路径
+    - search.suggest  # 搜索建议
+    - search.highlight  # 搜索关键词高亮
+    - content.code.copy  # 代码块复制按钮
+    - content.code.annotate  # 
+    - navigation.top  # 返回顶部按钮
+
+# 导航菜单
+nav:
+  - 首页: index.md
+  - 分类:
+    - 技术笔记: category/tech.md
+    - 生活随笔: category/life.md
+  - 关于我: about.md
+
+# 插件
+plugins:
+  - search  # 内置搜索插件
+
+# 扩展 Markdown 语法支持（按需启用）
+markdown_extensions:
+  - admonition  # 提示框
+  - pymdownx.details  # 折叠块
+  - pymdownx.superfences  # 更强大的代码块
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+# 版权信息
+copyright: Copyright &copy; 2025 你的名字  # 你的版权信息
