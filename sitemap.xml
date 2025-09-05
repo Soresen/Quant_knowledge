@@ -4,4 +4,20 @@
          <loc>https://your-domain.com/</loc>
          <lastmod>2025-09-05</lastmod>
     </url>
+    <url>
+         <loc>https://your-domain.com/category/alpha_search/</loc>
+         <lastmod>2025-09-05</lastmod>
+    </url>
+    <url>
+         <loc>https://your-domain.com/category/execution/</loc>
+         <lastmod>2025-09-05</lastmod>
+    </url>
+    <url>
+         <loc>https://your-domain.com/category/model/</loc>
+         <lastmod>2025-09-05</lastmod>
+    </url>
+    <url>
+         <loc>https://your-domain.com/category/strategy/</loc>
+         <lastmod>2025-09-05</lastmod>
+    </url>
 </urlset>

@@ -6,10 +6,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="这是一个基于MkDocs和Material主题搭建的知识库">
+        <meta name="description" content="Something I learned in Quant">
       
       
-        <meta name="author" content="你的名字">
+        <meta name="author" content="AkemiHikari">
       
       
         <link rel="canonical" href="https://your-domain.com/">
@@ -22,7 +22,7 @@
     
     
       
-        <title>我的Wiki博客</title>
+        <title>Soresen's Quant Knowledge Pages</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-mkdocs" class="md-skip">
+        <a href="#welcome" class="md-skip">
           跳转至
         </a>
       
@@ -88,7 +88,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="." title="我的Wiki博客" class="md-header__button md-logo" aria-label="我的Wiki博客" data-md-component="logo">
+    <a href="." title="Soresen&#39;s Quant Knowledge Pages" class="md-header__button md-logo" aria-label="Soresen's Quant Knowledge Pages" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -102,7 +102,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            我的Wiki博客
+            Soresen's Quant Knowledge Pages
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -285,13 +285,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="我的Wiki博客" class="md-nav__button md-logo" aria-label="我的Wiki博客" data-md-component="logo">
+    <a href="." title="Soresen&#39;s Quant Knowledge Pages" class="md-nav__button md-logo" aria-label="Soresen's Quant Knowledge Pages" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    我的Wiki博客
+    Soresen's Quant Knowledge Pages
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -351,6 +351,33 @@
       目录
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      简介
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      多因子线性模型
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      机器学习
+    </span>
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#commands" class="md-nav__link">
@@ -521,6 +548,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      简介
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      多因子线性模型
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      机器学习
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#commands" class="md-nav__link">
     <span class="md-ellipsis">
       Commands
@@ -554,20 +608,29 @@
 
 
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
+<h1 id="welcome">Welcome</h1>
+<p>This is Soresen's Quant Knowledge Pages.</p>
+<h2 id="_1">简介</h2>
+<p>据说现在 Quant 有两套主流的方法论，一套是多因子线性模型，一套是机器学习，还有很多未成熟的方法论。</p>
+<p>二者有一些共同需求，如高效的回测&amp;交易执行系统。</p>
+<p>除了方法论貌似还有一些分类方法，如 趋势追踪/时序/截面 策略，也有按交易次数划分的。</p>
+<p>把方法论应用到其他分类维度上也不能一以贯之。</p>
+<p>目前仅仅记录一些我掌握的东西，<a href="https://quant-wiki.com/">更权威的知识链接</a>。</p>
+<h2 id="_2">多因子线性模型</h2>
+<h2 id="_3">机器学习</h2>
+<p>暂且不知</p>
 <h2 id="commands">Commands</h2>
 <ul>
 <li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
 <li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
 <li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li><code>mkdocs gh-deploy</code> - deploy <code>/site</code> on GitHub Pages.</li>
 </ul>
 <h2 id="project-layout">Project layout</h2>
 <div class="highlight"><pre><span></span><code>mkdocs.yml    # The configuration file.
 docs/
     index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
+    ...       # Other markdown pages, images and other files, maybe never updated ~.~
 </code></pre></div>
 
 
@@ -604,7 +667,7 @@ docs/
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2025 你的名字
+      Copyright &copy; 2025 AkemiHikari
     </div>
   
   
@@ -631,6 +694,10 @@ docs/
     
     
       <script src="assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="docs/javascripts/mathjax.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js"></script>
       
     
   </body>
